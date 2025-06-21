@@ -7,6 +7,7 @@ margin: 0;
 height: 100vh;
 position: relative;
 transition: background-color 0.5s ease-in-out;
+pointer-events: all;
 }
 #rectangle{
 background-color: transparent;
@@ -19,10 +20,9 @@ padding-left: 10px;
 text-align: left;}
 #Login{
     position: absolute;
-    margin-left: 1100px;
    width: 80px;
    height: 40px;
-left: -10%;
+   right: 7%;
 top: 10%;
 background-image: linear-gradient(to right, #8e44ad,hwb(287 56% 21%),#d3b0e1);
 border-radius: 10px;
@@ -31,13 +31,18 @@ transition: background 0.3s ease;
 font-weight: bold;
 color: black;
 font-family: poppins;
+pointer-events: all;
+z-index: 10;
 
 }
+
 #Login:hover{
     background-image: linear-gradient(to right, #000000,#8e44ad) !important;
     color: #ccc;
     font-family: poppins;
+    
 }
+
 
 #list{ list-style: none;
 
@@ -95,10 +100,11 @@ animation: slideIn 1.2s ease-out 0.4 forwards;
     width: 400px;
     height: 573px;
     bottom: 10%;
-    left: 68%;
+    left: 69%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
-
+    z-index: 1;
+    pointer-events: none;
 
 }
 body:hover #pict1{
@@ -107,4 +113,59 @@ body:hover #pict1{
 }
 body:not(:hover) #pic1{
     opacity: 0;
+}
+#button1{
+    position: relative;
+    background-image: linear-gradient(to left, #8e44ad,hwb(287 56% 21%),#d3b0e1);
+border-radius: 10px;
+cursor: pointer;
+transition: background 0.3s ease;
+font-weight: bold;
+color: black;
+font-family: poppins;
+width: 90px;
+   height: 40px;
+   top:46%;
+   left: 5%;
+
+}
+#button2{
+      position: relative;
+    background-image: linear-gradient(to left, #8e44ad,hwb(287 56% 21%),#d3b0e1);
+border-radius: 10px;
+cursor: pointer;
+transition: background 0.3s ease;
+font-weight: bold;
+color: black;
+font-family: poppins;
+width: 90px;
+top: 46%;
+left: 15%;
+width: 90px;
+height: 40px;
+ }
+ #button1:hover{
+    background-image: linear-gradient(to right, #000000,#8e44ad) ;
+    color: #ccc;
+    font-family: poppins;
+}
+#button2:hover{
+    background-image: linear-gradient(to right, #000000,#8e44ad);
+    color: #ccc;
+    font-family: poppins;
+}
+#par2{
+   font-family: poppins;
+   font-size: 20px;
+color: #ccc;
+font-style: italic;
+}
+#par3{
+    width: 300px;
+    border-radius: 20px;
+
+}
+.bo{
+    font-size: 20px;
+    color: #ccc;
 }
