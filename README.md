@@ -17,4 +17,4 @@ The website is designed using only *HTML* and *CSS*, with focus on layout, user 
 ## ⚠️ License
 This project is *proprietary*.  
 All rights are reserved by the author (Zizo).  
-Do not copy, reuse, or modify any part of this project without written permission.
+Do not copy, reuse, or modify any part of this project without written permission
