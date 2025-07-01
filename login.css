@@ -1,0 +1,110 @@
+body{
+  background-image: url(Images/growtika-nGoCBxiaRO0-unsplash.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+#text1{
+    color: white;
+    font-family: poppins;
+    font-size: 30px;
+ text-align: center;
+ position: absolute;
+ top: 2%;
+ left: 38%;
+ text-shadow: 0 0 3px black, 0 0 2.5px black;
+}
+.textform{
+  position: relative;
+    color: white;
+    font-family: poppins;
+    font-size: 20px;
+  margin-left: 40px;
+  text-shadow: 0 0 3px black, 0 0 2.5px black;
+ margin-left: 22%;
+ margin-top: 10%
+}
+form{
+    position: relative;
+    border: solid 1px transparent;
+    width: 35vw;
+    height: 30vw;
+   margin: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgb(0, 0, 0,2);
+  margin-top: 70px;
+  margin-bottom: 70px;
+border-radius: 40px;
+flex-direction: column;
+
+}
+input{
+  position: absolute;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  text-align: center;
+font-size: 15px;
+font-family: poppins;
+color: black;
+width: 50%;
+height: 45px;
+margin-left: 22%;
+margin-top: -4%;
+background-color: rgba(255, 255, 255, 0.6);
+transition: background-color 0.3s ease;
+pointer-events:fill;
+display: block;
+}
+input:hover{
+background-color: rgba(151, 94, 205, 0.6) !important;
+}
+.button{ 
+   position: absolute;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  text-align: center;
+font-size: 18px;
+font-family: poppins;
+color: white;
+font-weight: bold;
+width: 80px;
+height: 50px;
+margin-left: 40%;
+margin-top: 7%;
+background-color: rgba(255, 255, 255, 0.6);
+text-shadow:   0 0 5px black, 0 0 4px black;
+pointer-events: all;
+}
+.button:hover{
+  background-color: rgba(151, 94, 205, 0.6);
+text-shadow:   0 0 5px black, 0 0 4px black;
+}
+.textform1{
+  position: relative;
+    color: white;
+    font-family: poppins;
+    font-size: 18px;
+  margin-left: 40px;
+  text-shadow: 0 0 3px black, 0 0 2.5px black;
+ margin-left: 25%;
+ margin-top: 19%
+}
+.textform2 {
+
+ position: relative;
+    font-family: poppins;
+    font-size: 18px;
+  margin-left: 40px;
+  text-shadow: 0 0 3px black, 0 0 2.5px black;
+ margin-left: 1%;
+ margin-top: 19%;
+ color: white;
+ pointer-events: all;
+ transition: color 0.3s ease;
+}
+.textform2:hover{
+  color: rgba(151, 94, 205, 0.6) !important;
+}

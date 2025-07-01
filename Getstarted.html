@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetStarted</title>
+    <link rel="stylesheet" href="Getstarted.css">
+</head>
+<body>
+         <h2 id="text1">Create an account!</h2>
+        <form >
+            <h5 class="textform" >Enter your FullName</h5>
+            <input type="text" placeholder="FullName" required>
+            <h5 class="textform">Enter you Username </h5>
+            <input type="text" placeholder="Username" required>
+            <h5 class="textform">Enter your Email </h5>
+            <input type="text" placeholder="example@gmail.com " required/><br>
+            <h5 class="textform">Create Password</h5>
+            <input id="create-password" type="password" placeholder=" Password" required/><br>
+            <div id="strength-meter" class="strength-meter">
+                <div id="strength-bar" class="strength-bar"></div>
+            </div>
+            <ul id="password-rules" >
+                <li id="length" class="invalid">At least 8 characters</li>
+                <li id="uppercase" class="invalid">At least one uppercase</li>
+                <li id="number" class="invalid">At least one number</li>
+                <li id="special" class="invalid">At least one special character</li>
+            </ul>
+             <h5 class="textform">Confirm Password</h5>
+            <input id="confirm-password"  type="password" placeholder=" Confirm Password" required/><br>
+            <p id="match-message" class="invalid">Password do not match</p>
+            <label >
+                <input class="checkbox" type="checkbox" required>
+                <h5 id="check"> I agree to the Terms and Conditions.</h5>
+            </label><br>
+            <button id="create-account" type="submit">Create Account</button>
+            <p id="submit-message"class="submit-message"></p>
+            <h3 class="textform1">Already have an account?<a class="textform2"  href="login.html">Login!</a> </h3>
+        </form>
+  <script src="getstarted.js"></script>
+</body>
+</html>

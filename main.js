@@ -34,21 +34,17 @@ function typeLine() {
 
   const lineWrapper = document.createElement("p");
   lineWrapper.style.fontFamily = "Poppins";
-  lineWrapper.style.fontSize = "15px";
+  lineWrapper.style.fontSize = "17px";
   lineWrapper.style.color = "white";
   lineWrapper.style.fontStyle = "italic";
-  lineWrapper.style.background = "none";
-  lineWrapper.style.boxShadow = "none";
-  lineWrapper.style.textShadow = "none";
-  lineWrapper.style.display = "inline-block";
-
-  lineWrapper.style.backgroundImage="none";
-  lineWrapper.style.backgroundColor="none";
-  
-
-
+  lineWrapper.style.display = "block";
+  lineWrapper.style.lineHeight="1.5";
+  lineWrapper.style.whiteSpace="normal";
+  lineWrapper.style.overflowWrap="break-word";
+  lineWrapper.style.wordBreak="break-word";
+  lineWrapper.style.width="100%";
+  lineWrapper.style.maxWidth="100%";
   const textSpan = document.createElement("span");
-
   const cursor = document.createElement("span");
   cursor.classList.add("cursor");
   cursor.textContent = "|";
@@ -104,3 +100,15 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+ document.getElementById("Login").addEventListener("click", function(){
+  window.location.href="login.html";
+window.scrollTo(0,0);
+ });
+document.head.appendChild(style);
+ document.getElementById("button1").addEventListener("click", function(){
+  window.location.href="Getstarted.html";
+window.scrollTo(0,0);
+ });
+
+
+ 
