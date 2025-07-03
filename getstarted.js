@@ -22,14 +22,21 @@ function checkPasswordRules(password) {
   numberRule.className = numberValid ? 'valid' : 'invalid';
   specialRule.className = specialValid ? 'valid' : 'invalid';
 
-  return lengthValid && uppercaseValid && numberValid && specialValid;
+  return {
+    lengthValid,
+    uppercaseValid,
+    numberValid,
+    specialValid,
+  };
 }
 function calculateStrength(rules){
     let score = 0;
-    for(const key in rules){
-        if (rules[key]) score +=25;
-    }return score
-} 
+    if (rules.lengthValid) score +=25;
+    if (rules.uppercaseValid) score +=25;
+    if( rules.numberValid) score +=25;
+    if(rules.specialValid) score +=25;
+    return score;
+}
 
 passwordInput.addEventListener('input', () => {
   const password = passwordInput.value; 
@@ -45,20 +52,16 @@ passwordInput.addEventListener('input', () => {
   strengthBar.style.width = strength + '%';
   if(strength <=25) {
     strengthBar.style.backgroundColor='red';
-  console.log('strength 25 -red');
 }
  else if (strength <= 50) {
     strengthBar.style.backgroundColor='orange';
-   console.log('strength 50 -orange');
 }
 else if (strength <=75) {
     
         strengthBar.style.backgroundColor='yellowgreen';
-   console.log('strength 75 -yellowgreen');
 }
   else  {
     strengthBar.style.backgroundColor='green';
-   console.log('strength 100 -green');
 }
   matchMessage.style.display='none';
   clearTimeout(passwordInput.showRulesTimeout);
@@ -69,12 +72,13 @@ else if (strength <=75) {
   confirmInput.addEventListener('input', () =>{
     matchMessage.style.display='none';
   });
-  createAccountBtn.addEventListener('click', () =>{
+  createAccountBtn.addEventListener('click', (e) =>{
+    e.preventDefault();
     const password = passwordInput.value;
    const  confirmPassword = confirmInput.value;
    const rules = checkPasswordRules(password);
    const allValid = Object.values(rules).every(Boolean);
-   if(allValid){
+   if( !allValid){
     submitMessage.style.color='red';
     submitMessage.textContent='Password does not meet all requirements.';
     submitMessage.style.display='block';

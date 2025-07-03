@@ -147,17 +147,17 @@ margin-bottom: 11%;
   content: "✗";
   color: red;
 }
-.strength-meter{
-  height: 10px;
+#strength-meter{
+  height: 20px;
   background: #555;
-  border-radius: 5px;
+  border-radius: 8px;
   width: 50%;
   margin-bottom: 10px;
   display: none;
   overflow: hidden;
   margin-left: 50px;
 }
-.strength-bar{
+#strength-bar{
   height: 100%;
   width: 0%;
   background-color: red;
