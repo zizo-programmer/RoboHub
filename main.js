@@ -1,3 +1,4 @@
+
 const observer1 = new IntersectionObserver((entries)=>{
     entries.forEach (entry => {
         if (entry.isIntersecting) {
@@ -111,4 +112,22 @@ window.scrollTo(0,0);
  });
 
 
- 
+ ///document.head.appendChild(style);
+/// document.getElementById("#Course").addEventListener("click", function(){
+  ///window.location.href="Course.html";
+  ///window.scrollTo(0,0);
+/// });
+ document.getElementById("courseLink").addEventListener("click", function(e){
+
+ });
+ const courseLink = document.getElementById("courseLink");
+  if(courseLink) {
+    courseLink.addEventListener("click", function(e){
+      const isLoggedIn = localStorage.getItem("loggedIn");
+      if (isLoggedIn !== "true"){
+        e.preventDefault();
+        alert("You must be logged in to access the course page.");
+      }
+    });
+  
+  }
