@@ -1,3 +1,14 @@
+const Logout = document.getElementById("Logout");
+if (Logout){
+    Logout.addEventListener('click', function() {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('user');
+    localStorage.removeItem('selectedPlan');
+    localStorage.removeItem('selectedDuration');
+    window.location.href='index.html';
+});
+}
+cons
 function validateEduEmail(){
     const emailInput = document.getElementById("edu-email");
     const errorMsg = document.getElementById("edu-error");
