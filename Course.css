@@ -160,6 +160,30 @@ text-shadow: 0 0 2px black, 0 0 4px white;
      background-image: linear-gradient(to right, #000000,#8e44ad) ;
      color: #ccc;
 }
+#Logout{
+     position: absolute;
+   width: 80px;
+   height: 40px;
+   right: 7%;
+top: 10px;
+background-image: linear-gradient(to right, #8e44ad,hwb(287 56% 21%),#d3b0e1);
+border-radius: 15px;
+cursor: pointer;
+transition: background 0.3s ease;
+font-weight: bold;
+color: black;
+font-family: poppins;
+pointer-events: all;
+z-index: 10;
+ border: 1px solid transparent;
+ font-size: 15px;
+}
+#Logout:hover{
+      background-image: linear-gradient(to right, #000000,#8e44ad) !important;
+    color: #ccc;
+    font-family: poppins;
+    border: 1px solid transparent;
+}
 .search-bar{
     display: flex;
     align-items: center;

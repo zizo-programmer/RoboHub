@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+ <link rel=" stylesheet" href="Pricing.css">
+ ,<link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+
+    <div id="toast" class="toast"></div>
+        <div id="rectangle" style="width: autofill;height: 50px;">RoboHub</div>
+     <div class="container"> 
+       <ul id="list">
+        <li> <a href="Course.html" >Course</a>  </li>
+        <li><a href="index.html#About">About</a> </li>
+        <li><a href="index.html#Contact">Contact</a> </li>
+        <li><a  href="Pricing.html ">Pricing</a></li>
+    <li> <a href="index.html">Home-Page</a></li>    
+    </ul>
+    </div>
+    <div class="Plan-container">
+        <div class="Plan">
+            <h2>Education-Plan</h2>
+         <ul class="price-options">
+            <li><strong>Yearly:</strong>Free</li>
+            </ul>
+            <ul class="features">
+                <li> <i class="fas fa-check-circle"></i>Access for All courses</li>
+                <li > <i class="fas fa-university"></i>University student only</li>
+                <li > <i class="fas fa-certificate"></i>Quizzes & Certificate</li>
+            </ul>
+            <input type="email" id="edu-email" placeholder="University Email">
+            <button  id="btn1" onclick="validateEduEmail()" style=" padding: 10px;">Access Free Plan</button>
+            <p id="edu-error" style="color: red; display: none; font-size: 14px;"></p>
+
+        </div>
+        <div class="Plan" data-plan="Standard">
+            <h2>Standard-Plan</h2>
+         <ul class="price-options">
+            <li onclick="subscribePlan(this)"><strong>Weekly:</strong>5$/Week</li>
+            <li onclick="subscribePlan(this)"><strong>Monthly:</strong>15$/Mo</li>
+            <li onclick="subscribePlan(this)"><strong>Yearly:</strong>30$/Yr</li>
+         </ul>
+         <ul class="features">
+            <li> <i class="fas fa-book"></i>All core courses</li>
+            <li><i class="fas fa-code"></i>Basic projects</li>
+            <li><i class="fas fa-envelope-open-text"></i>Email support</li>
+         </ul>
+         <button onclick="confirmSubscription(this)">Subscribe</button>
+        </div>
+        <div class="Plan" data-plan="Professional">
+            <h2>Professional-Plan</h2>
+            <ul class="price-options">
+                <li onclick="subscribePlan(this)"><strong >Weekly:</strong>15$/Week</li>
+            <li onclick="subscribePlan(this)"><strong >Monthly:</strong>40$/Mo</li>
+            <li onclick="subscribePlan(this)"><strong >Yearly:</strong>100$/Yr</li>
+            </ul>
+            <ul class="features">
+                <li ><i class="fas fa-bolt"></i>All pro access</li>
+                <li ><i class="fas fa-users"></i>Community support</li>
+                <li><i class="fas fa-user-tie"></i>1-on-1 Mentorship</li>
+            </ul>
+            <button onclick="confirmSubscription(this)">Subscribe</button>
+        </div>
+        <div class="Plan" data-plan="Enterprise"> 
+            <h2>Enterprise-Plan</h2>
+             <ul class="price-options">
+                <li onclick="subscribePlan(this)"><strong >Weekly:</strong>30$/Week</li>
+            <li onclick="subscribePlan(this)"><strong >Monthly:</strong>60$/Mo</li>
+            <li onclick="subscribePlan(this)"><strong >Yearly:</strong>200$/Yr</li>
+            </ul>
+            <ul class="features">
+                <li><i class="fas fa-tools"></i>All Pro features</li>
+                <li><i class="fas fa-award"></i>Certificate of team work</li>
+                <li><i class="fas fa-users-cog"></i>Multi-user</li>
+            </ul>
+            <button onclick="confirmSubscription(this)">Subscribe</button>
+        </div>
+    </div>
+<script src="Pricing.js"></script>
+</body>
+</html>

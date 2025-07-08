@@ -1,7 +1,17 @@
-const isLoggedIn = localStorage.getElementById("loggedIn");
+const isLoggedIn = localStorage.getItem("isLoggedIn");
 if (isLoggedIn !== "true"){
     alert("You need to login with your account to continue");
     window.location.href="login.html";
+}
+const Logout = document.getElementById("Logout");
+if (Logout){
+    Logout.addEventListener('click', function() {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('user');
+    localStorage.removeItem('selectedPlan');
+    localStorage.removeItem('selectedDuration');
+    window.location.href='index.html';
+});
 }
 const searchInput = document.getElementById('search-input');
 const courses = document.querySelectorAll('.course-card');
@@ -25,3 +35,4 @@ found= true;
         noResults.style.display='none';
     }
 });
+
