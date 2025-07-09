@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
-form, h2, input, button, p{
-    font-family: 'Cairo', sans-serif;
-}
+
+
 body{
   background-image: url('/Images/growtika-nGoCBxiaRO0-unsplash.png');
   background-repeat: no-repeat;
